@@ -1,0 +1,152 @@
+body{
+	background-color: white;
+}
+
+.container{
+	background-color: rgb(184, 67, 67);
+	padding: 20px;
+	width: 100%;
+	color: #FFFFFF;
+	display: flex;
+}
+.problems__wrapper{
+		background-color: #1C1B1B;
+		padding: 30px;
+}
+.problems{
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	grid-template-rows: repeat(3, auto);
+	gap: 10px 10px;
+	margin-top: 140px;
+}
+.problems__wrapper>h2{
+	font-family: 'Space Grotesk';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	color: rgba(255, 48, 93, 0.77)
+}
+.problems__wrapper>p{
+	font-family: 'Space Grotesk';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 28px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	color: #FFFFFF;
+}
+
+.option__bg{
+	text-align: center;
+	margin-left: 30px;
+	width: 100%;
+	padding: 40px;		
+	background-image: url('../img/image.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+h3{
+	font-family: 'Bruno Ace';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 33px;
+	letter-spacing: 0.02em;
+	color: rgba(255, 48, 93, 0.77);
+}
+
+button{
+	background-color: rgba(255, 48, 93, 0.77);
+	color: #FFFFFF;
+	border-radius: 4px;
+	padding: 7px;
+	margin-top: 20px;
+	margin-left: 30px;
+}
+.button__text{
+	font-family: 'Space Grotesk';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 13px;
+	letter-spacing: 0.02em;
+	color: #FFFFFF;
+}
+
+@media screen and (min-width: 1024px) {
+	body{
+		background-color: black;
+		padding: 20px;
+	}
+	
+	.problems {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 200px);
+	}
+
+	
+}
+/* ===== ANIMATIONS ===== */
+
+
+h1 {
+    animation: titleAnimation 1.5s ease;
+}
+
+header p {
+    animation: textAnimation 2s ease;
+}
+
+
+
+
+
+/* Logo */
+
+header>a {
+    transition: 0.4s;
+}
+
+header>a:hover {
+    transform: scale(1.08);
+}
+
+/* Problems cards */
+
+.problems__wrapper {
+    transition: all 0.4s ease;
+}
+
+.problems__wrapper:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(255, 48, 93, 0.6);
+}
+
+/* Why section */
+
+.reasons div {
+    transition: 0.5s;
+}
+
+.reasons div:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 30px rgba(255, 48, 93, 0.3);
+}
+
+/* Button */
+
+.button {
+    transition: all 0.4s ease;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(255, 48, 93, 0.8);
+}
+

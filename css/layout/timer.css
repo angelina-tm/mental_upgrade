@@ -1,0 +1,370 @@
+
+:root{
+    --accent: #FF305D;
+    --card: #1C1B1B;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+body{
+    background: #000;
+    overflow-x: hidden;
+    position: relative;
+}
+a:hover{
+    color: var(--accent)
+}
+
+.cours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+.h1 {
+    font-family: 'Bruno Ace', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    text-align: center;
+    color: var(--accent);
+}
+
+.subtitle {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+}
+
+.timer-box {
+    width: 100%;
+    height: 140px;
+    margin: 40px auto 0;
+    background: var(--card);
+    border: 2px solid var(--accent);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#countdown {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    color: white;
+}
+
+.stats {
+    width: 100%;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.stat-card {
+    background: var(--card);
+    border: 1px solid rgba(255, 48, 93, .2);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: .3s;
+}
+
+.stat-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+}
+
+.stat-card span {
+    display: block;
+    font-family: 'Bruno Ace', sans-serif;
+    font-size: 28px;
+    color: var(--accent);
+}
+
+.stat-card p {
+    margin-top: 12px;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.benefits {
+    width: 100%;
+    margin: 60px auto;
+}
+
+.benefits h2 {
+    text-align: center;
+    color: var(--accent);
+    font-family: 'Bruno Ace', sans-serif;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.benefit {
+    background: var(--card);
+    border: 1px solid rgba(255, 48, 93, .2);
+    border-radius: 20px;
+    padding: 24px;
+    transition: .3s;
+}
+
+.benefit:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+}
+
+.benefit h3 {
+    color: var(--accent);
+    font-family: 'Bruno Ace', sans-serif;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.benefit p {
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    line-height: 1.6;
+}
+
+.join-text {
+    width: 100%;
+    margin: 60px auto 0;
+    font-family: 'Bruno Ace', sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: white;
+}
+
+.join-form {
+    width: 100%;
+    margin: 40px auto 0;
+    border: 1px solid var(--accent);
+    border-radius: 24px;
+    padding: 20px;
+}
+
+.join-form h2 {
+    font-family: 'Bruno Ace', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+}
+
+.form-text {
+    margin-top: 15px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+.input-group {
+    width: 100%;
+}
+
+.join-form input {
+    display: block;
+    width: 100%;
+    margin-top: 35px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 48, 93, .4);
+    padding: 0 0 15px 10px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+.join-form input::placeholder {
+    color: rgba(142, 29, 53, 0.55);
+}
+
+.join-form input:focus {
+    outline: none;
+    border-bottom: 1px solid var(--accent);
+}
+
+.join-form button {
+    display: block;
+    width: 140px;
+    height: 42px;
+    margin: 50px auto 0;
+    border: none;
+    border-radius: 10px;
+    background: var(--accent);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    color: white;
+    transition: .3s;
+}
+
+.join-form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(248, 46, 90, 0.5);
+}
+
+.burger {
+    transition: .3s;
+}
+
+.burger span,
+.burger span::before,
+.burger span::after {
+    transition: .3s;
+}
+
+.burger:hover span,
+.burger:hover span::before,
+.burger:hover span::after {
+    background: var(--accent);
+}
+
+@media (min-width: 768px) {
+    body::before {
+        width: 450px;
+        height: 450px;
+    }
+
+    .h1 {
+        font-size: 42px;
+    }
+
+    .subtitle {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .timer-box {
+        height: 220px;
+        margin-top: 60px;
+    }
+
+    #countdown {
+        font-size: 60px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 90%;
+    }
+
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .join-text {
+        font-size: 22px;
+        max-width: 80%;
+    }
+
+    .join-form {
+        max-width: 80%;
+        padding: 40px;
+    }
+
+    .join-form h2 {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 1200px) {
+    body::before {
+        width: 600px;
+        height: 600px;
+        top: -200px;
+        left: -200px;
+    }
+
+    .h1 {
+        font-size: 64px;
+    }
+
+    .subtitle {
+        width: 690px;
+        margin-top: 54px;
+        font-size: 24px;
+    }
+
+    .timer-box {
+        width: 1180px;
+        height: 420px;
+        margin-top: 120px;
+        border-radius: 28px;
+    }
+
+    #countdown {
+        font-size: 128px;
+    }
+
+    .stats {
+        width: min(1180px, 90%);
+        margin-top: 80px;
+    }
+
+    .stat-card span {
+        font-size: 36px;
+    }
+
+    .benefits {
+        width: min(1320px, 90%);
+        margin: 120px auto;
+    }
+
+    .benefits h2 {
+        font-size: 42px;
+        margin-bottom: 60px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .benefit {
+        padding: 30px;
+    }
+
+    .join-text {
+        width: 1200px;
+        margin-top: 140px;
+        font-size: 36px;
+    }
+
+    .join-form {
+        margin-top: 110px;
+        padding: 45px 55px 65px;
+    }
+
+    .join-form input {
+        margin-top: 70px;
+        font-size: 24px;
+    }
+
+    .join-form button {
+        width: 170px;
+        height: 48px;
+        margin-top: 110px;
+        font-size: 24px;
+    }
+}
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: .8s;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: none;
+}

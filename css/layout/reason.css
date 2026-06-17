@@ -1,0 +1,73 @@
+.reason div{
+    background: #1F1F1FC4;
+    margin-top: 30px;
+    padding: 20px;
+    }
+
+.reason{
+        margin: 40px;
+    }
+
+.reason div p{
+    font-family: Space Grotesk;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 2%;
+    text-align: center;
+    }
+    
+.reason div h2{
+    font-family: Bruno Ace;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 27px;
+    line-height: 100%;
+    letter-spacing: 10%;
+    text-align: center;
+    vertical-align: bottom;
+    color: #FF305DC4;
+    
+    }
+.neural-path{
+    width:min(1200px,90%);
+    margin:80px auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.node{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+
+.node span{
+    width:24px;
+    height:24px;
+    border-radius:50%;
+    border:2px solid #FF305D;
+    background:#1C1B1B;
+    transition:.4s;
+}
+
+.node.active span{
+    background:#FF305D;
+    box-shadow:0 0 30px #FF305D;
+}
+
+.node p{
+    font-family:'Space Grotesk',sans-serif;
+    color:white;
+    font-size:18px;
+}
+
+.line{
+    width:180px;
+    height:2px;
+    background:rgba(255,48,93,.25);
+    margin:0 10px;
+}

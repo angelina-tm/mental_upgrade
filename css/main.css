@@ -1,0 +1,11 @@
+@import 'base/variables.css';
+@import 'base/reset.css';
+@import 'base/base.css';
+@import 'layout/reason.css';
+
+@import 'layout/header.css';
+@import 'layout/footer.css';
+@import 'layout/timer.css';
+@import 'layout/Feedback.css';
+@import 'layout/course.css';
+@import 'layout/hero.css';

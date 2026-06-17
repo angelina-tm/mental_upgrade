@@ -1,0 +1,41 @@
+body {
+  font-family: var(--font-main);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  color: var(--color-text);
+}
+h1, h2, h3, h4, h5, h6, p {
+       margin: 0;
+}
+
+
+img, video, svg {
+  display: block;   
+  max-width: 100%; 
+  height: auto;
+}
+
+
+ul, ol {
+  list-style: none;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font: inherit;
+}
+
+
+input, textarea, select {
+  font: inherit; 
+}
+

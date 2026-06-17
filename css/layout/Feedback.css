@@ -1,0 +1,113 @@
+.reviews {
+    padding: 80px 20px;
+    background: #000;
+    color: white;
+}
+
+.reviews-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.reviews-header h2 {
+    font-family: 'Bruno Ace', cursive;
+    font-size: 30px;
+    color: #FF305DC4;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.reviews-header p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    color: rgba(255,255,255,.7);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.reviews-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.review-card {
+    width: 100%;
+    padding: 30px;
+    background: rgba(255,255,255,.04);
+    border: 1px solid rgba(255,48,93,.2);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    transition: .4s;
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+    border-color: #FF305D;
+    box-shadow: 0 0 30px rgba(255,48,93,.25);
+}
+
+.review-top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.avatar {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #FF305D, #ff6b89);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bruno Ace', cursive;
+    color: white;
+    font-size: 18px;
+}
+
+.review-top h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+.review-top span {
+    font-family: 'Space Grotesk', sans-serif;
+    color: rgba(255,255,255,.6);
+    font-size: 14px;
+}
+
+.review-card p {
+    font-family: 'Space Grotesk', sans-serif;
+    line-height: 1.8;
+    color: rgba(255,255,255,.85);
+    font-size: 16px;
+}
+
+.reviews-footer {
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    color: rgba(255,255,255,.5);
+    font-size: 15px;
+}
+
+/* DESKTOP */
+
+@media (min-width: 769px) {
+
+    .reviews {
+        padding: 120px 8%;
+    }
+
+    .reviews-header h2 {
+        font-size: 42px;
+    }
+
+    .review-card {
+        width: 340px;
+    }
+}
